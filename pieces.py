@@ -3,7 +3,7 @@ def add_tuples(tuple1, tuple2):
 
 def pawn(pos, color):
     colors = {'B': (0, -2), 'W': (0, 2)}
-    return colors[color]
+    return add_tuples(pos, colors[color])
     
 def king(pos, direction):
     directions = {'N': (0, 1), 'NE': (1, 1), 'NW': (-1, 1), 'E': (1, 0), 'SE': (1, -1), 'S': (0, -1), 'W': (-1, 0), 'SW': (-1, -1)}
